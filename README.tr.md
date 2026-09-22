@@ -4,6 +4,8 @@
 
 Zomato Bangalore Restoranları veri seti (51.717 restoran, 17 sütun) üzerinde keşifsel veri analizi ve özellik mühendisliği. Veri temizleme, eksik değer yönetimi, encoding ve restoran puanlarıyla ilişkili faktörlerin görsel analizini kapsar.
 
+🔗 **Kaggle Notebook olarak da mevcut:** [zomato-bangalore-restaurants-eda-feature](https://www.kaggle.com/code/nadiucar/zomato-bangalore-restaurants-eda-feature)
+
 ## 📊 Veri Seti
 
 - **Kaynak:** [Zomato Bangalore Restaurants](https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants) (Kaggle)

@@ -4,6 +4,8 @@
 
 Exploratory data analysis and feature engineering on the Zomato Bangalore Restaurants dataset (51,717 restaurants, 17 columns), covering data cleaning, missing value handling, encoding, and visual analysis of factors related to restaurant ratings.
 
+🔗 **Also available as a Kaggle Notebook:** [zomato-bangalore-restaurants-eda-feature](https://www.kaggle.com/code/nadiucar/zomato-bangalore-restaurants-eda-feature)
+
 ## 📊 Dataset
 
 - **Source:** [Zomato Bangalore Restaurants](https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants) (Kaggle)
