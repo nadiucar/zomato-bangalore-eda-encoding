@@ -1,0 +1,13 @@
+# Data
+*.csv
+data/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+.spyderproject
+.spyproject

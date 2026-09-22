@@ -120,9 +120,12 @@ zomato-bangalore-eda/
 ## ▶️ How to Run
 
 ```bash
+# 1. Download zomato.csv from the Kaggle dataset link above and place it in scripts/
 pip install -r requirements.txt
 python scripts/zomato_EDA_Featuring_v1.py
 ```
+
+> The raw dataset (`zomato.csv`) is not included in this repo — see `.gitignore`. Download it from the [Kaggle source](https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants) instead.
 
 ## 👤 Author
 

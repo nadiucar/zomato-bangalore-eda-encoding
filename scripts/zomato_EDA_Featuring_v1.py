@@ -114,6 +114,8 @@ df_clean.info()
 
 df_clean = df_clean.drop(columns="dish_liked")
 
+df_clean = df_clean.drop(columns="menu_item")
+
 drop_na_col = ['location', 'cuisines']
 
 df_clean = df_clean.dropna(subset=drop_na_col)
@@ -142,10 +144,6 @@ df_clean['location'].unique()
 df_clean['rest_type'].unique()
 
 df_clean['cuisines'].unique()
-
-df_clean['menu_item'].unique()
-
-df_clean['menu_item'].value_counts()
 
 df_clean['listed_in(type)'].unique()
 

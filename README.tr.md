@@ -121,9 +121,12 @@ zomato-bangalore-eda/
 ## ▶️ Nasıl Çalıştırılır
 
 ```bash
+# 1. zomato.csv dosyasını yukarıdaki Kaggle linkinden indirip scripts/ klasörüne koy
 pip install -r requirements.txt
 python scripts/zomato_EDA_Featuring_v1.py
 ```
+
+> Ham veri seti (`zomato.csv`) bu repoya dahil edilmemiştir — bkz. `.gitignore`. [Kaggle kaynağından](https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-restaurants) indirebilirsin.
 
 ## 👤 Yazar
 
