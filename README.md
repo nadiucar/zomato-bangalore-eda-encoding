@@ -44,6 +44,7 @@ Exploratory data analysis and feature engineering on the Zomato Bangalore Restau
 1. **Rating column (`rate` → `rate(over 5)`)**
    - Replaced placeholder values (`"NEW"`, `"-"`) with `NaN`
    - Removed the `/5` suffix, converted to `float`
+   - This raised the missing count from 7,775 to 10,052 — placeholder values like `"NEW"` and `"-"` were hiding additional missing data that a plain `isnull()` check couldn't catch
 2. **Phone column**
    - Split into `phone_first` and `phone_secondary` (some restaurants listed two numbers, separated by `\r\n`)
    - Stripped `+` and spaces for a consistent format
@@ -58,7 +59,7 @@ Exploratory data analysis and feature engineering on the Zomato Bangalore Restau
 | `dish_liked` | 28,078 (54%) | Dropped — too sparse to be reliable |
 | `menu_item` | ~76% empty lists (`'[]'`) | Dropped |
 | `location` / `cuisines` | 21 / 45 | Rows dropped (negligible share of data) |
-| `rest_type` | 227 | Mode imputation (`Quick Bites`) |
+| `rest_type` | 227 | Mode imputation (`Quick Bites`, 19,335 occurrences) |
 | `approx_cost(for two people)` | 346 | Group median by `listed_in(type)` |
 | `phone_first` / `phone_secondary` | 1,179 / 31,661 | Left as-is — structurally missing (most restaurants only list one phone number) |
 

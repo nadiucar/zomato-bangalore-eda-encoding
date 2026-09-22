@@ -44,6 +44,7 @@ Zomato Bangalore Restoranları veri seti (51.717 restoran, 17 sütun) üzerinde 
 1. **Puan sütunu (`rate` → `rate(over 5)`)**
    - Placeholder değerler (`"NEW"`, `"-"`) `NaN` ile değiştirildi
    - `/5` son eki kaldırıldı, `float` tipine çevrildi
+   - Bu işlem eksik değer sayısını 7.775'ten 10.052'ye çıkardı — `"NEW"` ve `"-"` gibi placeholder değerler, sade bir `isnull()` kontrolünün yakalayamadığı gizli eksik verileri barındırıyordu
 2. **Telefon sütunu**
    - `phone_first` ve `phone_secondary` olarak iki sütuna ayrıldı (bazı restoranlarda `\r\n` ile ayrılmış iki numara vardı)
    - Tutarlı bir format için `+` işareti ve boşluklar temizlendi
@@ -58,7 +59,7 @@ Zomato Bangalore Restoranları veri seti (51.717 restoran, 17 sütun) üzerinde 
 | `dish_liked` | 28.078 (%54) | Düşürüldü — güvenilir olamayacak kadar seyrek |
 | `menu_item` | ~%76 boş liste (`'[]'`) | Düşürüldü |
 | `location` / `cuisines` | 21 / 45 | Satırlar düşürüldü (verinin çok küçük bir kısmı) |
-| `rest_type` | 227 | Mode ile doldurma (`Quick Bites`) |
+| `rest_type` | 227 | Mode ile doldurma (`Quick Bites`, 19.335 kez tekrarlanmış) |
 | `approx_cost(for two people)` | 346 | `listed_in(type)` bazında grup medyanı |
 | `phone_first` / `phone_secondary` | 1.179 / 31.661 | Olduğu gibi bırakıldı — yapısal olarak eksik (çoğu restoranda tek numara var) |
 
