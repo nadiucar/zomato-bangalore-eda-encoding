@@ -1,4 +1,4 @@
-🇬🇧 English | [🇹🇷 Türkçe](README.tr.md)
+En English | [🇹🇷 Türkçe](README.tr.md)
 
 # Zomato Bangalore Restaurants — EDA & Feature Engineering
 
