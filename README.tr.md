@@ -1,4 +1,4 @@
-[🇬🇧 English](README.md) | 🇹🇷 Türkçe
+[EN](README.md) | **TR**
 
 # Zomato Bangalore Restoranları — Keşifsel Veri Analizi ve Özellik Mühendisliği
 
